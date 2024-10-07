@@ -1,3 +1,6 @@
+import React from 'react';
+import Image from "next/image";
+
 // app/about/page.js
 export default function AboutPage() {
   return (
@@ -25,13 +28,12 @@ export default function AboutPage() {
             </p>
             <p className="text-lg text-gray-700">
               Our journey has been marked by trust, collaboration, and constant
-              growth. We’re proud of the milestones we've achieved and excited
+              growth. We&apos;re proud of the milestones we&apos;ve achieved and excited
               about the future ahead.
             </p>
           </div>
           <div className="md:w-1/2 p-4">
-            <img
-              src="/images/team.jpg"
+            <Image               src="/images/team.jpg"
               alt="A photo of our team"
               className="rounded-lg shadow-lg w-full object-cover"
             />
@@ -71,11 +73,12 @@ export default function AboutPage() {
         <section className="text-center">
           <h2 className="text-3xl font-bold mb-6 text-black">Get in Touch</h2>
           <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-            We’d love to hear from you. Feel free to reach out with any
+            We&apos;d love to hear from you. Feel free to reach out with any
             questions, or simply to learn more about what we offer.
           </p>
           <a
             href="/contact"
+            target="_blank" rel="noreferrer"
             className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700"
           >
             Contact Us

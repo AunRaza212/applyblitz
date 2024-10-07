@@ -10,7 +10,7 @@ const Packages = () => {
         <h2 className="text-4xl font-bold mb-4">Choose Your Package</h2>
         {/* Subheading */}
         <p className="text-lg text-gray-400">
-          Select the plan that fits your career stage and goals. Whether you're a fresh graduate or an experienced professional, we have the right solution for you!
+          Select the plan that fits your career stage and goals. Whether you&apos;re a fresh graduate or an experienced professional, we have the right solution for you!
         </p>
       </div>
 

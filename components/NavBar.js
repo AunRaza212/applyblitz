@@ -18,16 +18,16 @@ const NavBar = () => {
           </button>
         </div>
         <div className="hidden md:flex space-x-4">
-          <a href="/" className="text-white hover:text-yellow-400 transition duration-200">
+          <a href="/" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-400 transition duration-200">
             Home
           </a>
-          <a href="/about" className="text-white hover:text-yellow-400 transition duration-200">
+          <a href="/about" target="_blank" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
             About
           </a>
-          <a href="/contact" className="text-white hover:text-yellow-400 transition duration-200">
+          <a href="/contact" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-400 transition duration-200">
             Contact
           </a>
-          <a href="/checkout" className="text-white hover:text-yellow-400 transition duration-200">
+          <a href="/checkout" target="_blank" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
             Checkout
           </a>
         </div>
@@ -41,16 +41,16 @@ const NavBar = () => {
         <button onClick={toggleMenu} className="absolute top-4 right-4 text-white text-3xl z-20">
           &times;
         </button>
-        <a href="/" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
+        <a href="/" target="_blank" rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           Home
         </a>
-        <a href="/about" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
+        <a href="/about" target="_blank" rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           About
         </a>
-        <a href="/contact" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
+        <a href="/contact" target="_blank" rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           Contact
         </a>
-        <a href="/checkout" className="text-white text-xl hover:text-yellow-400" onClick={() => setIsOpen(false)}>
+        <a href="/checkout" target="_blank" rel="noreferrer" className="text-white text-xl hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           Checkout
         </a>
       </nav>

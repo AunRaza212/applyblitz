@@ -1,4 +1,6 @@
 // app/about/page.js
+import React from 'react';
+import Image from 'next/image';
 import '../styles/global.css'
 export default function AboutPage() {
   return (
@@ -26,12 +28,12 @@ export default function AboutPage() {
             </p>
             <p className="text-lg text-gray-700">
               Our journey has been marked by trust, collaboration, and constant
-              growth. We’re proud of the milestones we've achieved and excited
+              growth. We&apos;re proud of the milestones we&apos;ve achieved and excited
               about the future ahead.
             </p>
           </div>
           <div className="md:w-1/2 p-4">
-            <img
+            <Image
               src="/images/team.jpg"
               alt="A photo of our team"
               className="rounded-lg shadow-lg w-full object-cover"
@@ -77,6 +79,7 @@ export default function AboutPage() {
           </p>
           <a
             href="/contact"
+            target="_blank" rel="noreferrer"
             className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700"
           >
             Contact Us

@@ -41,7 +41,7 @@ const Testimonials = () => {
       image: "/images/john_doe.jpg", // Update with actual image path
     },
     {
-      text: "Highly professional and reliable. I’d recommend this service to anyone serious about their career.",
+      text: "Highly professional and reliable. I'd recommend this service to anyone serious about their career.",
       name: "Jane Smith",
       role: "Software Engineer",
       image: "/images/jane_smith.jpg", // Update with actual image path
@@ -91,7 +91,7 @@ const Testimonials = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-yellow-500">What Our Clients Say</h2>
           <p className="text-lg text-gray-300">
-            Don’t just take our word for it. Hear from our satisfied clients!
+            Don&apos;t just take our word for it. Hear from our satisfied clients!
           </p>
         </div>
 
@@ -106,7 +106,7 @@ const Testimonials = () => {
                   className="w-24 h-24 rounded-full mb-4 mx-auto" 
                 />
                 <p className="text-xl font-medium text-gray-200 mb-4 text-center"> {/* Centering text */}
-                  "{testimonial.text}"
+                  {testimonial.text}
                 </p>
                 <h3 className="text-2xl font-bold text-yellow-500 text-center">{testimonial.name}</h3> {/* Centering text */}
                 <span className="text-gray-400 text-center block">{testimonial.role}</span> {/* Centering text */}

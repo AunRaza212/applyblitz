@@ -1,4 +1,5 @@
 // import Hero from '../components/Hero';
+import React from 'react';
 import Packages from "../components/Packages";
 import Features from "../components/Features";
 // import About from '../components/About';

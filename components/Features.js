@@ -10,7 +10,7 @@ const Features = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-yellow-500">Why Choose Us?</h2>
           <p className="text-lg text-gray-300">
-            We provide top-notch services tailored to your professional needs. Here’s why we stand out.
+            We provide top-notch services tailored to your professional needs. Here&apos;s why we stand out.
           </p>
         </div>
 

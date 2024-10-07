@@ -22,22 +22,22 @@ const Footer = () => {
     <div>
       <ul className="space-y-2">
         <li>
-          <a href="#home" className="hover:text-yellow-400 transition-colors duration-300">
+          <a href="#home" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors duration-300">
             Home
           </a>
         </li>
         <li>
-          <a href="#services" className="hover:text-yellow-400 transition-colors duration-300">
+          <a href="#services" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors duration-300">
             Services
           </a>
         </li>
         <li>
-          <a href="#about" className="hover:text-yellow-400 transition-colors duration-300">
+          <a href="#about" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors duration-300">
             About Us
           </a>
         </li>
         <li>
-          <a href="#contact" className="hover:text-yellow-400 transition-colors duration-300">
+          <a href="#contact  " target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors duration-300">
             Contact
           </a>
         </li>
@@ -51,13 +51,13 @@ const Footer = () => {
         Get Started
       </button>
       <div className="flex space-x-4 mt-6">
-        <a href="https://facebook.com" target="_blank" className="text-white hover:text-yellow-400">
+        <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-400">
           <i className="fab fa-facebook-f"></i>
         </a>
-        <a href="https://twitter.com" target="_blank" className="text-white hover:text-yellow-400">
+        <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-400">
           <i className="fab fa-twitter"></i>
         </a>
-        <a href="https://linkedin.com" target="_blank" className="text-white hover:text-yellow-400">
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-400">
           <i className="fab fa-linkedin-in"></i>
         </a>
       </div>

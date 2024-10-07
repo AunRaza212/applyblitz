@@ -1,14 +1,15 @@
 "use client";
-import { useState } from "react";
+import React from 'react';
+// import { useState } from "react";
 import "./globals.css";
 import Head from "next/head"; // Import Head from next/head
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 export default function RootLayout({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  // const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <html lang="en">

@@ -2,7 +2,7 @@ import React from 'react';
 import image from '../public/apply.png';
 import Image from 'next/image';
 import '../styles/global.css';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const AgencySection = () => {
   return (
@@ -15,7 +15,7 @@ const AgencySection = () => {
             Dream Big. Achieve Bigger.
           </h1>
           <p className="text-gray-400 mb-8">
-            Unlock Your Career Potential with Our Expert Job Application Service! Whether you’re a fresh graduate or an experienced professional, we’ve got the tools to land you a high paying job.
+            Unlock Your Career Potential with Our Expert Job Application Service! Whether you&apos;re a fresh graduate or an experienced professional, we&apos;ve got the tools to land you a high paying job.
           </p>
           {/* Button */}
           <button className="relative inline-block px-8 py-4 rounded-md text-gray-800 font-bold bg-yellow-500 transition-all duration-300 hover:bg-yellow-600">
