@@ -27,9 +27,9 @@ const NavBar = () => {
           <a href="/contact" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-400 transition duration-200">
             Contact
           </a>
-          <a href="/checkout" target="_blank" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
+          {/* <a href="/checkout" target="_blank" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
             Checkout
-          </a>
+          </a> */}
         </div>
       </div>
       {/* Mobile Menu */}
@@ -50,9 +50,9 @@ const NavBar = () => {
         <a href="/contact" target="_blank" rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           Contact
         </a>
-        <a href="/checkout" target="_blank" rel="noreferrer" className="text-white text-xl hover:text-yellow-400" onClick={() => setIsOpen(false)}>
+        {/* <a href="/checkout" target="_blank" rel="noreferrer" className="text-white text-xl hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           Checkout
-        </a>
+        </a> */}
       </nav>
     </nav>
   );
