@@ -28,16 +28,16 @@ export default function AboutPage() {
             </p>
             <p className="text-lg text-gray-700">
               Our journey has been marked by trust, collaboration, and constant
-              growth. We&apos;re proud of the milestones we&apos;ve achieved and excited
+              growth. We&apos;re proud of the milestones weve achieved and excited
               about the future ahead.
             </p>
           </div>
           <div className="md:w-1/2 p-4">
-            <Image
+            {/* <Image
               src="/images/team.jpg"
               alt="A photo of our team"
               className="rounded-lg shadow-lg w-full object-cover"
-            />
+            /> */}
           </div>
         </section>
 

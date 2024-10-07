@@ -33,10 +33,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="md:w-1/2 p-4">
-            <Image               src="/images/team.jpg"
+            {/* <Image               src="/images/team.jpg"
               alt="A photo of our team"
               className="rounded-lg shadow-lg w-full object-cover"
-            />
+            /> */}
           </div>
         </section>
 

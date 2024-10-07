@@ -25,7 +25,7 @@ const AgencySection = () => {
 
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
-          <Image src={image} alt="Business person pointing" className="rounded-lg shadow-md" width={500} height={500} objectFit="cover" />
+          {/* <Image src={image} alt="Business person pointing" className="rounded-lg shadow-md" width={500} height={500} objectFit="cover" /> */}
         </div>
       </div>
     </section>

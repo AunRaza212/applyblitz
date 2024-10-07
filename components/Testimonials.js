@@ -6,6 +6,7 @@ import React from 'react';
 import Slider from 'react-slick'; // Ensure react-slick and slick-carousel are installed
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
 const Testimonials = () => {
   // Slick Slider settings
@@ -100,11 +101,11 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="px-4"> {/* Added padding to create space between slides */}
               <div className="p-8 bg-gray-700 rounded-lg shadow-lg">
-                <img 
+                {/* <Image 
                   src={testimonial.image} 
                   alt={testimonial.name} 
                   className="w-24 h-24 rounded-full mb-4 mx-auto" 
-                />
+                /> */}
                 <p className="text-xl font-medium text-gray-200 mb-4 text-center"> {/* Centering text */}
                   {testimonial.text}
                 </p>
