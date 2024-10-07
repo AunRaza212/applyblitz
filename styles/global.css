@@ -1,0 +1,43 @@
+globals.css
+body,h1,p,h2,h3,h4,h5,h6 {
+  font-family: 'Red Hat Display';
+}
+button {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button div {
+    transition: all 0.3s ease;
+  }
+  
+  button div:nth-child(1) {
+    transform-origin: top left;
+  }
+  
+  button div:nth-child(3) {
+    transform-origin: bottom left;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif; /* Apply font to the entire body */
+  }
+  
+  p {
+    font-family: 'Montserrat', sans-serif; /* Ensure all <p> tags use the Montserrat font */
+    color: #4A4A4A; /* Optional: Set a default text color for paragraphs */
+    line-height: 1.6; /* Optional: Improve readability */
+    margin-bottom: 1rem; /* Optional: Add space below each paragraph */
+  }
+
+  
