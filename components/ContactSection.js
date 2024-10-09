@@ -1,9 +1,9 @@
 "use client"; // Ensure this line is at the top
 
 // app/contact/page.js
-import React from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import CSS for react-toastify
+import React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import CSS for react-toastify
 
 export default function ContactSection() {
   const handleSubmit = async (e) => {
@@ -29,23 +29,31 @@ export default function ContactSection() {
       <div className="max-w-4xl mx-auto px-4 py-20">
         {/* Introduction Section */}
         <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-yellow-500">Contact Us</h1>
+          <h1 className="text-4xl font-bold mb-4 text-yellow-500">
+            Contact Us
+          </h1>
           <p className="text-xl text-gray-300">
-            Have any questions or feedback? We&apos;d love to hear from you! Fill out the form below or reach us through any of the provided contact details.
+            Have any questions or feedback? We&apos;d love to hear from you!
+            Fill out the form below or reach us through any of the provided
+            contact details.
           </p>
         </section>
 
         {/* Form Section */}
         <section className="mb-16">
-          <form 
-            
-            name="Contact Form" 
-            className="grid grid-cols-1 gap-6" 
+          <form
+            action="/"
+            netlify
+            name="Contact Form"
+            className="grid grid-cols-1 gap-6"
             method="POST"
             onSubmit={handleSubmit} // Ensure onSubmit is handled correctly
           >
             <div>
-              <label htmlFor="name" className="block text-lg font-medium text-yellow-500">
+              <label
+                htmlFor="name"
+                className="block text-lg font-medium text-yellow-500"
+              >
                 Your Name
               </label>
               <input
@@ -59,7 +67,10 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-lg font-medium text-yellow-500">
+              <label
+                htmlFor="email"
+                className="block text-lg font-medium text-yellow-500"
+              >
                 Email Address
               </label>
               <input
@@ -73,7 +84,10 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-lg font-medium text-yellow-500">
+              <label
+                htmlFor="message"
+                className="block text-lg font-medium text-yellow-500"
+              >
                 Message
               </label>
               <textarea
