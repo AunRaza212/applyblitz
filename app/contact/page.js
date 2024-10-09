@@ -14,7 +14,7 @@ export default function ContactPage() {
 
         {/* Form Section */}
         <section className="mb-16">
-          <form className="grid grid-cols-1 gap-6">
+          <form netlify name='Gold' className="grid grid-cols-1 gap-6">
             <div>
               <label htmlFor="name" className="block text-lg font-medium text-gray-800">
                 Your Name
