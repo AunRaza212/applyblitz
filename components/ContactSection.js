@@ -1,59 +1,63 @@
 "use client"; // Ensure this line is at the top
 
 // app/contact/page.js
-import React from "react";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // Import CSS for react-toastify
+import React from 'react';
+import { toast, ToastContainer } from 'react-toastify'; // Import ToastContainer
+import 'react-toastify/dist/ReactToastify.css'; // Import CSS for react-toastify
 
 export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission
 
-    // Optionally, you can collect form data here if needed
-    // const formData = new FormData(e.target);
+    // Form data collection
+    const formData = new FormData(e.target);
 
-    // You can add logic to handle form submission (like sending data to an API)
-
-    // Show success notification
-    toast.success("Your message has been sent successfully!", {
-      position: "top-right", // Use string values for position
+    // Send form data to Netlify
+    const response = await fetch('/', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json',
+      },
     });
 
-    // Optionally, reset the form fields after submission
-    e.target.reset();
+    // Check if the response is OK
+    if (response.ok) {
+      // Show success notification
+      toast.success("Your message has been sent successfully!", {
+        position: "top-right", // Use string values for position
+      });
+      e.target.reset(); // Reset the form fields
+    } else {
+      // Show error notification if something goes wrong
+      toast.error("There was an error sending your message. Please try again.", {
+        position: "top-right",
+      });
+    }
   };
 
   return (
     <div className="bg-gray-900 min-h-screen text-white">
-      <ToastContainer /> {/* Add ToastContainer here to display toasts */}
       <div className="max-w-4xl mx-auto px-4 py-20">
         {/* Introduction Section */}
         <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-yellow-500">
-            Contact Us
-          </h1>
+          <h1 className="text-4xl font-bold mb-4 text-yellow-500">Contact Us</h1>
           <p className="text-xl text-gray-300">
-            Have any questions or feedback? We&apos;d love to hear from you!
-            Fill out the form below or reach us through any of the provided
-            contact details.
+            Have any questions or feedback? We&apos;d love to hear from you! Fill out the form below or reach us through any of the provided contact details.
           </p>
         </section>
 
         {/* Form Section */}
         <section className="mb-16">
-          <form
-            action="/"
-            netlify
-            name="Contact Form"
-            className="grid grid-cols-1 gap-6"
+          <form 
+            name="Contact Form" // Ensure this matches the hidden input below
             method="POST"
             onSubmit={handleSubmit} // Ensure onSubmit is handled correctly
           >
+            <input type="hidden" name="form-name" value="Contact Form" /> {/* Hidden input for Netlify */}
+
             <div>
-              <label
-                htmlFor="name"
-                className="block text-lg font-medium text-yellow-500"
-              >
+              <label htmlFor="name" className="block text-lg font-medium text-yellow-500">
                 Your Name
               </label>
               <input
@@ -67,10 +71,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label
-                htmlFor="email"
-                className="block text-lg font-medium text-yellow-500"
-              >
+              <label htmlFor="email" className="block text-lg font-medium text-yellow-500">
                 Email Address
               </label>
               <input
@@ -84,10 +85,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label
-                htmlFor="message"
-                className="block text-lg font-medium text-yellow-500"
-              >
+              <label htmlFor="message" className="block text-lg font-medium text-yellow-500">
                 Message
               </label>
               <textarea
@@ -109,6 +107,9 @@ export default function ContactSection() {
           </form>
         </section>
       </div>
+
+      {/* Toast Container */}
+      <ToastContainer />
     </div>
   );
 }
