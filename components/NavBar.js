@@ -18,13 +18,13 @@ const NavBar = () => {
           </button>
         </div>
         <div className="hidden md:flex space-x-4">
-          <a href="/" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-400 transition duration-200">
+          <a href="/"  rel="noreferrer" className="text-white hover:text-yellow-400 transition duration-200">
             Home
           </a>
-          <a href="/about" target="_blank" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
+          <a href="/about" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
             About
           </a>
-          <a href="/contact" target="_blank" rel="noreferrer" className="text-white hover:text-yellow-400 transition duration-200">
+          <a href="/contact"  rel="noreferrer" className="text-white hover:text-yellow-400 transition duration-200">
             Contact
           </a>
           {/* <a href="/checkout" target="_blank" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">

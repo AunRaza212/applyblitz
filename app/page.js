@@ -8,6 +8,7 @@ import AgencySection from "../components/HeroSection";
 import "../styles/global.css";
 import HowWeWork from "../components/HowWeWork";
 import Testimonials from "../components/Testimonials";
+import ContactSection from '../components/ContactSection';
 // import PackageSection from "@/components/Packages";
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Testimonials/>
       <Packages />
       <HowWeWork/>
+      <ContactSection/>
       {/* <About /> */}
     </>
   );

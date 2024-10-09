@@ -8,7 +8,7 @@ export default function HowWeWork() {
       <div className="max-w-6xl mx-auto px-4 text-gray-300">
         {/* Main Heading */}
         <h2 className="text-4xl font-bold mb-6 text-white uppercase tracking-wide">
-          Tailored for Your Success!
+        How We Get You Hired
         </h2>
         <p className="text-lg mb-12 font-medium text-gray-400">
           Our three-step process guarantees the best results for your career journey.

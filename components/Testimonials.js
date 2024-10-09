@@ -6,7 +6,7 @@ import React from 'react';
 import Slider from 'react-slick'; // Ensure react-slick and slick-carousel are installed
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Testimonials = () => {
   // Slick Slider settings
