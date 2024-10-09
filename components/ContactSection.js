@@ -39,7 +39,7 @@ export default function ContactSection() {
       name="Contact Form" 
       method="POST" 
       onSubmit={handleSubmit} 
-      data-netlify="true"
+netlify
     >
       <input type="hidden" name="form-name" value="Contact Form" />
       
