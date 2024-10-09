@@ -2,18 +2,18 @@
 
 // app/contact/page.js
 import React from 'react';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import CSS for react-toastify
 
 export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission
 
-    // Form data collection
-    const formData = new FormData(e.target);
+    // Optionally, you can collect form data here if needed
+    // const formData = new FormData(e.target);
 
     // You can add logic to handle form submission (like sending data to an API)
-    
+
     // Show success notification
     toast.success("Your message has been sent successfully!", {
       position: "top-right", // Use string values for position
@@ -25,6 +25,7 @@ export default function ContactSection() {
 
   return (
     <div className="bg-gray-900 min-h-screen text-white">
+      <ToastContainer /> {/* Add ToastContainer here to display toasts */}
       <div className="max-w-4xl mx-auto px-4 py-20">
         {/* Introduction Section */}
         <section className="text-center mb-12">
