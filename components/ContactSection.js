@@ -17,10 +17,10 @@ export default function ContactSection() {
         <section className="mb-16">
           <form 
             netlify 
-            name="Contact Form" 
+            name="Contact" 
+            
             className="grid grid-cols-1 gap-6" 
             method="POST" 
-            data-netlify="true" // Ensure Netlify recognizes the form
           >
             <div>
               <label htmlFor="name" className="block text-lg font-medium text-yellow-500"> {/* Updated label color */}
