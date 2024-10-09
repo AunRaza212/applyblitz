@@ -38,7 +38,7 @@ export default function ContactSection() {
         {/* Form Section */}
         <section className="mb-16">
           <form 
-            netlify 
+            
             name="Contact Form" 
             className="grid grid-cols-1 gap-6" 
             method="POST"
