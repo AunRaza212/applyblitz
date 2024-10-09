@@ -11,12 +11,12 @@ export default function ContactSection() {
           <p className="text-xl text-gray-300">
             Have any questions or feedback? We&apos;d love to hear from you! Fill out the form below or reach us through any of the provided contact details.
           </p>
-          
+
         </section>
 
         {/* Form Section */}
         <section className="mb-16">
-          <form data-netlify='true' className="grid grid-cols-1 gap-6">
+          <form netlify className="grid grid-cols-1 gap-6">
             <div>
               <label htmlFor="name" className="block text-lg font-medium text-yellow-500"> {/* Updated label color */}
                 Your Name
