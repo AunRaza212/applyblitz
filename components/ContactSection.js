@@ -11,6 +11,7 @@ export default function ContactSection() {
           <p className="text-xl text-gray-300">
             Have any questions or feedback? We&apos;d love to hear from you! Fill out the form below or reach us through any of the provided contact details.
           </p>
+          
         </section>
 
         {/* Form Section */}
