@@ -1,18 +1,22 @@
-"use client"
+"use client"; // Ensure this line is at the top
 
 // app/contact/page.js
 import React from 'react';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Import CSS for react-toastify
 
 export default function ContactSection() {
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission
 
-    // Here you can add logic to handle form submission (like sending data to an API)
+    // Form data collection
+    const formData = new FormData(e.target);
+
+    // You can add logic to handle form submission (like sending data to an API)
     
     // Show success notification
     toast.success("Your message has been sent successfully!", {
-      position: toast.POSITION.TOP_RIGHT,
+      position: "top-right", // Use string values for position
     });
 
     // Optionally, reset the form fields after submission
@@ -20,11 +24,11 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen text-white"> {/* Updated background and text colors */}
+    <div className="bg-gray-900 min-h-screen text-white">
       <div className="max-w-4xl mx-auto px-4 py-20">
         {/* Introduction Section */}
         <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-yellow-500">Contact Us</h1> {/* Updated heading color */}
+          <h1 className="text-4xl font-bold mb-4 text-yellow-500">Contact Us</h1>
           <p className="text-xl text-gray-300">
             Have any questions or feedback? We&apos;d love to hear from you! Fill out the form below or reach us through any of the provided contact details.
           </p>
@@ -37,7 +41,7 @@ export default function ContactSection() {
             name="Contact Form" 
             className="grid grid-cols-1 gap-6" 
             method="POST"
-            onSubmit={handleSubmit} // Add the onSubmit handler
+            onSubmit={handleSubmit} // Ensure onSubmit is handled correctly
           >
             <div>
               <label htmlFor="name" className="block text-lg font-medium text-yellow-500">
