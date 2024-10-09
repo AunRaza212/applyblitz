@@ -11,16 +11,17 @@ export default function ContactSection() {
           <p className="text-xl text-gray-300">
             Have any questions or feedback? We&apos;d love to hear from you! Fill out the form below or reach us through any of the provided contact details.
           </p>
-
         </section>
 
         {/* Form Section */}
         <section className="mb-16">
-          <form  netlify 
+          <form 
+            netlify 
             name="Contact Form" 
             className="grid grid-cols-1 gap-6" 
-            method="POST" // Added method attribute
-            >
+            method="POST" 
+            data-netlify="true" // Ensure Netlify recognizes the form
+          >
             <div>
               <label htmlFor="name" className="block text-lg font-medium text-yellow-500"> {/* Updated label color */}
                 Your Name
@@ -28,8 +29,10 @@ export default function ContactSection() {
               <input
                 type="text"
                 id="name"
+                name="name" // Added name attribute for identification
                 className="mt-1 block w-full px-4 py-2 border border-gray-500 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm bg-gray-800 text-white placeholder-gray-400"
                 placeholder="Enter your name"
+                required // Optional: For client-side validation
               />
             </div>
 
@@ -40,8 +43,10 @@ export default function ContactSection() {
               <input
                 type="email"
                 id="email"
+                name="email" // Added name attribute for identification
                 className="mt-1 block w-full px-4 py-2 border border-gray-500 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm bg-gray-800 text-white placeholder-gray-400"
                 placeholder="Enter your email"
+                required // Optional: For client-side validation
               />
             </div>
 
@@ -51,15 +56,17 @@ export default function ContactSection() {
               </label>
               <textarea
                 id="message"
+                name="message" // Added name attribute for identification
                 rows="6"
                 className="mt-1 block w-full px-4 py-2 border border-gray-500 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm bg-gray-800 text-white placeholder-gray-400"
                 placeholder="Enter your message"
+                required // Optional: For client-side validation
               />
             </div>
 
             <button
               type="submit"
-              className=" bg-yellow-500 w-fit h-fit text-gray-900 py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600"
+              className="bg-yellow-500 w-fit h-fit text-gray-900 py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600"
             >
               Send Message
             </button>
