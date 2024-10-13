@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <nav className="bg-[#1A202C] fixed top-0 left-0 w-full z-50">
       <div className="max-w-[1312px] mx-auto flex justify-between items-center p-4">
-        <div className="text-yellow-400 text-2xl font-bold uppercase">ApplyBlitz</div>
+        <div className="text-yellow-400 text-2xl font-semibold uppercase">ApplyBlitz</div>
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu} className="relative z-20 flex flex-col items-center justify-center w-10 h-10">
             {/* Hamburger Icon */}

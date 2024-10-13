@@ -47,7 +47,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="  text-white">
+    <div id="Contact Us" className="  text-white">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-yellow-500">
@@ -63,14 +63,14 @@ export default function ContactSection() {
             name="Contact Form"
             method="POST"
             onSubmit={handleSubmit}
-            className="flex flex-col gap-2"
+            className="flex flex-col gap-6"
           >
             <input type="hidden" name="form-name" value="Contact Form" />
 
             <div>
               <label
                 htmlFor="name"
-                className="block text-lg font-medium text-yellow-500"
+                className="block text-lg font-bold font-redhat text-yellow-500"
               >
                 Your Name
               </label>
@@ -80,7 +80,7 @@ export default function ContactSection() {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="mt-1 block w-full px-4 py-2 border border-gray-500 rounded-md bg-gray-800 text-white placeholder-gray-400"
+                className="mt-1 block w-full px-4 py-2 border  border-gray-500 rounded-md bg-gray-800 text-white placeholder-gray-400"
                 required
               />
             </div>
@@ -88,7 +88,7 @@ export default function ContactSection() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-lg font-medium text-yellow-500"
+                className="block text-lg font-bold font-redhat text-yellow-500"
               >
                 Email Address
               </label>
@@ -106,7 +106,7 @@ export default function ContactSection() {
             <div>
               <label
                 htmlFor="message"
-                className="block text-lg font-medium text-yellow-500"
+                className="block text-lg  font-bold font-redhat text-yellow-500"
               >
                 Message
               </label>

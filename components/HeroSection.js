@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import image from '../public/apply.png';
 import Image from 'next/image';
@@ -21,7 +22,12 @@ const AgencySection = () => (
         {/* <button className="relative inline-block px-8 py-4 rounded-md text-gray-800 font-bold bg-yellow-500 transition-all duration-300 hover:bg-yellow-600">
           Get Started
         </button> */}
-        <Button text={'Get Started'} bgColor={'yellow-500'} textColor={'gray-800'} />
+        <div className='flex flex-col gap-2 md:flex-row '>
+        <Button  targetSectionId={'Packages'} text={'Get Started'} bgColor={'yellow-500'} textColor={'gray-800'} />
+        <Button  targetSectionId={'Contact Us'} text={'Contact Us'} bgColor={'yellow-500'} textColor={'gray-800'} />
+        </div>
+      
+
       </div>
 
       {/* Image Section */}

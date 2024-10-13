@@ -1,3 +1,4 @@
+'use client'
 import Button from "../utils/Button";
 import React from "react";
 

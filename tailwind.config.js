@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        redhat:['Red Hat Display']
+        redhat: ["Red Hat Display", "sans-serif"],
+        mont: ["Montserrat", "sans-serif"],
       },
     },
   },
