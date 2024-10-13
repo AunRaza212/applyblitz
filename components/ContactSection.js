@@ -47,7 +47,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="bg-gray-900  text-white">
+    <div className="  text-white">
       <div className="max-w-4xl mx-auto px-4 py-20">
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-yellow-500">

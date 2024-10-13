@@ -4,10 +4,10 @@ import { BsFillCheckCircleFill } from 'react-icons/bs';
 
 export default function HowWeWork() {
   return (
-    <section id='HowWeWork' className="py-20 bg-[#1A202C] text-center">
+    <section id='HowWeWork' className="py-20 bg-gray-800 text-center">
       <div className="max-w-6xl mx-auto px-4 text-gray-300">
         {/* Main Heading */}
-        <h2 className="text-4xl font-bold mb-6 text-white uppercase tracking-wide">
+        <h2 className="text-4xl font-bold mb-6 text-yellow-500  tracking-wide">
         How We Get You Hired
         </h2>
         <p className="text-lg mb-12 font-medium text-gray-400">
@@ -15,9 +15,9 @@ export default function HowWeWork() {
         </p>
 
         {/* Steps Section */}
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 gap-10">
           {/* Step 1 */}
-          <div className="group relative bg-gray-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
+          <div className="group relative bg-gray-600 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
             <BsFillCheckCircleFill className="text-4xl text-yellow-500 absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 p-2 rounded-full" />
             <h3 className="text-2xl font-bold mb-4 text-white">
               Gather Your Information
@@ -28,7 +28,7 @@ export default function HowWeWork() {
           </div>
 
           {/* Step 2 */}
-          <div className="group relative bg-gray-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
+          <div className="group relative bg-gray-600 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
             <BsFillCheckCircleFill className="text-4xl text-yellow-500 absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 p-2 rounded-full" />
             <h3 className="text-2xl font-bold mb-4 text-white">
               Create a New Email
@@ -39,7 +39,7 @@ export default function HowWeWork() {
           </div>
 
           {/* Step 3 */}
-          <div className="group relative bg-gray-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
+          <div className="group relative bg-gray-600 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
             <BsFillCheckCircleFill className="text-4xl text-yellow-500 absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 p-2 rounded-full" />
             <h3 className="text-2xl font-bold mb-4 text-white">
               Apply to 500 Jobs!

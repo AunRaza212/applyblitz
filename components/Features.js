@@ -15,7 +15,7 @@ const Features = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           
           {/* Feature 1 */}
           <div className="p-8 cursor-pointer bg-gray-700 rounded-lg shadow-lg hover:bg-yellow-500 group transition-all duration-300">

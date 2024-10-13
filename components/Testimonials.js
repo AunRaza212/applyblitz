@@ -6,12 +6,12 @@ import React from 'react';
 import Slider from 'react-slick'; // Ensure react-slick and slick-carousel are installed
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-// import Image from 'next/image';
+import Image from 'next/image';
 
 const Testimonials = () => {
   // Slick Slider settings
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3, // Show 3 testimonials at once
@@ -86,7 +86,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id='testimonials' className="w-full py-20 bg-gray-800 text-white">
+    <section id='testimonials' className="w-full py-20  bg-gray-800 text-white">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-12">
@@ -99,13 +99,15 @@ const Testimonials = () => {
         {/* Slick Slider */}
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="px-4"> {/* Added padding to create space between slides */}
-              <div className="p-8 bg-gray-700 rounded-lg shadow-lg">
-                {/* <Image 
-                  src={testimonial.image} 
-                  alt={testimonial.name} 
+            <div key={index} className="px-4 "> {/* Added padding to create space between slides */}
+              <div className="p-8 bg-gray-700 rounded-lg h-[360px] shadow-lg">
+                <Image 
+                  src={'https://picsum.photos/200/300'} 
+                  alt={'img'} 
+                  width={200}
+                  height={200}
                   className="w-24 h-24 rounded-full mb-4 mx-auto" 
-                /> */}
+                />
                 <p className="text-xl font-medium text-gray-200 mb-4 text-center"> {/* Centering text */}
                   {testimonial.text}
                 </p>
