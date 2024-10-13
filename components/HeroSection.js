@@ -22,7 +22,7 @@ const AgencySection = () => (
         {/* <button className="relative inline-block px-8 py-4 rounded-md text-gray-800 font-bold bg-yellow-500 transition-all duration-300 hover:bg-yellow-600">
           Get Started
         </button> */}
-        <div className='flex flex-col gap-2 md:flex-row '>
+        <div className='flex flex-col gap-2 md:flex-row'>
         <Button  targetSectionId={'Packages'} text={'Get Started'} bgColor={'yellow-500'} textColor={'gray-800'} />
         <Button  targetSectionId={'Contact Us'} text={'Contact Us'} bgColor={'yellow-500'} textColor={'gray-800'} />
         </div>
@@ -32,7 +32,7 @@ const AgencySection = () => (
 
       {/* Image Section */}
       <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
-        <Image src={image} alt="Business person pointing" className="rounded-lg shadow-md" width={500} height={500} objectFit="cover" />
+        <Image src={image} alt="Business person pointing" className="rounded-lg " width={500} height={500} objectFit="cover" />
       </div>
     </div>
   </section>

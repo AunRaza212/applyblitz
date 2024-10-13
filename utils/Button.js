@@ -1,9 +1,18 @@
-'use client'
+"use client";
 
 import React from "react";
 
-const Button = ({ type, text, bgColor, textColor, hoverColor,textHover,targetSectionId }) => {
-  console.log(type,  "type");
+const Button = ({
+  type,
+  text,
+  bgColor,
+  textColor,
+  hoverColor,
+  textHover,
+  targetSectionId,
+  otherclasses,
+}) => {
+  console.log(type, "type");
 
   // Function to scroll to the target section
   const handleClick = () => {

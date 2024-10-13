@@ -120,6 +120,7 @@ export default function ContactSection() {
               />
             </div>
             <Button
+            otherclasses='w-full lg:w-fit'
               text={"Send Message"}
               bgColor={"yellow-500"}
               type='submit'
