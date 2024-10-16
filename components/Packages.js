@@ -40,6 +40,7 @@ const Packages = () => {
           {/* Button for Checkout */}
           <div className="relative z-10">
             <Button
+            otherclasses={'w-fit h-fit'}
               text={"Get Started"}
               bgColor={"yellow-500"}
               textHover={"group-hover:text-white"}
@@ -69,6 +70,7 @@ const Packages = () => {
           {/* Button for Checkout */}
           <div className="relative z-10">
             <Button
+            otherclasses={'w-fit h-fit'}
               text={"Get Started"}
               bgColor={"yellow-500"}
               hoverColor={"group-hover:bg-gray-700"}

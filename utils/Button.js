@@ -10,7 +10,7 @@ const Button = ({
   hoverColor,
   textHover,
   targetSectionId,
-  otherclasses,
+  otherclasses
 }) => {
   console.log(type, "type");
 
@@ -26,7 +26,7 @@ const Button = ({
     <button
     onClick={handleClick} // Handle the click event to scroll
       type={type}
-      className={`py-3 px-6 rounded-lg w-fit h-fit bg-${bgColor} transition-all duration-300 ease-in ${hoverColor} ${textHover} text-${textColor} font-semibold`}
+      className={`py-3 px-6 rounded-lg ${otherclasses} bg-${bgColor} transition-all duration-300 ease-in ${hoverColor ? hoverColor :''} ${textHover ? textHover : ''} text-${textColor} font-semibold`}
     >
       {text}
     </button>

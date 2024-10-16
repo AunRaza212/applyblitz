@@ -5,7 +5,7 @@ import { BsFillCheckCircleFill } from 'react-icons/bs';
 export default function HowWeWork() {
   return (
     <section id='HowWeWork' className="py-20 bg-gray-800 text-center">
-      <div className="max-w-6xl mx-auto px-4 text-gray-300">
+      <div className="max-w-6xl mx-auto px-4 text-gray-300 cursor-pointer">
         {/* Main Heading */}
         <h2 className="text-4xl font-bold mb-6 text-yellow-500  tracking-wide">
         How We Get You Hired

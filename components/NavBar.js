@@ -18,7 +18,7 @@ const NavBar = () => {
           </button>
         </div>
         <div className="hidden md:flex space-x-4">
-          <a href="/"  rel="noreferrer" className="text-white hover:text-yellow-400 transition duration-200">
+          <a href="/"  rel="noreferrer" className="text-white text-yellow-400s hover:text-yellow-400 transition duration-200">
             Home
           </a>
           <a href="/about" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
@@ -41,13 +41,13 @@ const NavBar = () => {
         <button onClick={toggleMenu} className="absolute top-4 right-4 text-white text-3xl z-20">
           &times;
         </button>
-        <a href="/" target="_blank" rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
+        <a href="/"  rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           Home
         </a>
-        <a href="/about" target="_blank" rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
+        <a href="/about"  rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           About
         </a>
-        <a href="/contact" target="_blank" rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
+        <a href="/contact" rel="noreferrer" className="text-white text-xl mb-4 hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           Contact
         </a>
         {/* <a href="/checkout" target="_blank" rel="noreferrer" className="text-white text-xl hover:text-yellow-400" onClick={() => setIsOpen(false)}>

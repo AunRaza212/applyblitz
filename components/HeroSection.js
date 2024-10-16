@@ -15,7 +15,7 @@ const AgencySection = () => (
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Dream Big. Achieve Bigger.
         </h1>
-        <p className="text-gray-400 mb-8">
+        <p className="text-gray-400 mb-8 ">
           Unlock Your Career Potential with Our Expert Job Application Service! Whether you&apos;re a fresh graduate or an experienced professional, we&apos;ve got the tools to land you a high paying job.
         </p>
         {/* Button */}
@@ -23,8 +23,8 @@ const AgencySection = () => (
           Get Started
         </button> */}
         <div className='flex flex-col gap-2 md:flex-row'>
-        <Button  targetSectionId={'Packages'} text={'Get Started'} bgColor={'yellow-500'} textColor={'gray-800'} />
-        <Button  targetSectionId={'Contact Us'} text={'Contact Us'} bgColor={'yellow-500'} textColor={'gray-800'} />
+        <Button otherclasses={'md:w-fit h-fit w-full items-center'}  targetSectionId={'Packages'} text={'Browse Packages'} bgColor={'yellow-500'} textColor={'gray-800'} />
+        <Button otherclasses={'md:w-fit h-fit w-full items-center'} targetSectionId={'Contact Us'} text={'Contact Us'} bgColor={'yellow-500'} textColor={'gray-800'} />
         </div>
       
 

@@ -14,7 +14,7 @@ const Testimonials = () => {
     slidesToShow: 3, // Show 3 testimonials at once
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024, // Medium devices
