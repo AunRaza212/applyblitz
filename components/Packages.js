@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Button from "../utils/Button";
 import React from "react";
 
@@ -11,7 +11,9 @@ const Packages = () => {
       {/* Main Container */}
       <div className="max-w-[1440px] mx-auto text-center mb-16">
         {/* Main Heading */}
-        <h2 className="text-4xl font-bold  mb-6 text-yellow-500">Choose Your Package</h2>
+        <h2 className="text-4xl font-bold  mb-6 text-yellow-500">
+          Choose Your Package
+        </h2>
         {/* Subheading */}
         <p className="text-lg text-gray-400">
           Select the plan that fits your career stage and goals. Whether
@@ -29,18 +31,32 @@ const Packages = () => {
 
           {/* Content */}
           <span className="text-6xl mb-4 relative z-10">🎓</span>
-          <h3 className="text-3xl font-bold mb-2 relative z-10">Entry-Level Package</h3>
-          <p className="text-3xl font-semibold mb-2 text-yellow-400 relative z-10">$49.99</p>
-          <p className="text-md text-gray-300 mb-4 relative z-10">Monthly Package</p>
+          <h3 className="text-3xl font-bold mb-2 relative z-10">
+            Kickstart Your Career
+          </h3>
+          <h5 className="text-md font-light my-2 relative z-10">
+            Perfect for Students & Recent Graduates
+          </h5>
+          <p className="text-3xl font-semibold mb-2 text-yellow-400 relative z-10">
+            <sup>$</sup> 199.99
+          </p>
+          <p className="text-md text-white  mb-4 relative z-10">
+            Monthly Package
+          </p>
+          <p className="text-md text-white mb-4 font-bold relative z-10 ">
+            500 applications/month
+          </p>
+
           <p className="text-white mb-6 relative z-10">
-            Perfect for recent graduates or those just starting in the industry. Get tailored job
-            applications and guidance to launch your career.
+            Perfect for recent graduates or those just starting in the industry.
+            Get tailored job applications and guidance to launch your career.{" "}
+            <strong></strong>
           </p>
 
           {/* Button for Checkout */}
           <div className="relative z-10">
             <Button
-            otherclasses={'w-fit h-fit'}
+              otherclasses={"w-fit h-fit"}
               text={"Get Started"}
               bgColor={"yellow-500"}
               textHover={"group-hover:text-white"}
@@ -60,23 +76,40 @@ const Packages = () => {
 
           {/* Content */}
           <span className="text-6xl mb-4 relative z-10">💼</span>
-          <h3 className="text-3xl font-bold mb-2 relative z-10">Premium Package</h3>
-          <p className="text-3xl font-semibold mb-2 text-yellow-400 relative z-10">$149.99</p>
-          <p className="text-md text-gray-300 mb-4 relative z-10">Monthly Package</p>
+          <h3 className="text-3xl font-bold mb-2 relative z-10">
+            Executive Career Transition
+          </h3>
+          <h5 className="text-md font-light my-2 relative z-10">
+            For Senior Professionals & Executives
+          </h5>
+
+          <p className="text-3xl font-semibold mb-2 text-yellow-400 relative z-10">
+            <sup>$</sup> 349.99
+          </p>
+          <p className="text-md text-gray-300 mb-4 relative z-10">
+            Monthly Package
+          </p>
+          <p className="text-md text-white mb-4 font-bold relative z-10 ">
+            700 applications/month
+          </p>
           <p className="text-white mb-6 relative z-10">
-            Our premium package is designed for experienced professionals looking to make a significant career shift. Get customized job applications, one-on-one consultations, and more.
+            The premium package is tailored for experienced professionals
+            seeking to make a significant career shift. Benefit from customized
+            job applications, personalized one-on-one consultations.
           </p>
 
           {/* Button for Checkout */}
           <div className="relative z-10">
             <Button
-            otherclasses={'w-fit h-fit'}
+              otherclasses={"w-fit h-fit"}
               text={"Get Started"}
               bgColor={"yellow-500"}
               hoverColor={"group-hover:bg-gray-700"}
               textColor={"gray-800"}
               textHover={"group-hover:text-white"}
-              onClick={() => (window.location.href = "/checkout?package=premium")}
+              onClick={() =>
+                (window.location.href = "/checkout?package=premium")
+              }
             />
           </div>
         </div>

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 
 // app/about/page.js
 export default function AboutPage() {
   return (
-    <div className="bg-[#f9f9f9] min-h-screen">
+    <div className="bg-[#1A202C] min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-16">
         {/* Introduction Section */}
         <section className="text-center mb-12">
@@ -21,15 +21,18 @@ export default function AboutPage() {
           <div className="md:w-1/2 p-4">
             <h2 className="text-3xl font-bold mb-4 text-black">Our Story</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Founded in [Year], our mission has always been to drive success
-              and provide value for our clients. From humble beginnings, we have
-              grown into a thriving team dedicated to innovation and
-              professionalism.
+              Founded in 2024, our mission has always been to empower
+              individuals in their job search journey. What began as a
+              spontaneous effort to help a friend quickly transformed into a
+              passion for guiding others through the complexities of job
+              applications.
             </p>
             <p className="text-lg text-gray-700">
-              Our journey has been marked by trust, collaboration, and constant
-              growth. We&apos;re proud of the milestones we&apos;ve achieved and excited
-              about the future ahead.
+              From those humble beginnings, we've grown into a dedicated team
+              focused on innovation and support. Our journey has been shaped by
+              trust, collaboration, and continuous learning. We're proud of the
+              milestones we've achieved and excited about the impact we’ll
+              continue to make in the future.
             </p>
           </div>
           <div className="md:w-1/2 p-4">
@@ -42,25 +45,33 @@ export default function AboutPage() {
 
         {/* Core Values Section */}
         <section className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-black">Our Core Values</h2>
+          <h2 className="text-3xl font-bold mb-6 text-black">
+            Our Core Values
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Core Value Cards */}
             <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-black">Integrity</h3>
+              <h3 className="text-xl font-semibold mb-4 text-black">
+                Integrity
+              </h3>
               <p className="text-gray-700">
                 We believe in being honest and transparent with our clients,
                 always delivering what we promise.
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-black">Innovation</h3>
+              <h3 className="text-xl font-semibold mb-4 text-black">
+                Innovation
+              </h3>
               <p className="text-gray-700">
                 Our team continuously explores new ways to improve and innovate
                 within our industry.
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-black">Excellence</h3>
+              <h3 className="text-xl font-semibold mb-4 text-black">
+                Excellence
+              </h3>
               <p className="text-gray-700">
                 We strive for excellence in everything we do, aiming to exceed
                 expectations at every step.
@@ -78,7 +89,8 @@ export default function AboutPage() {
           </p>
           <a
             href="/contact"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
             className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700"
           >
             Contact Us
