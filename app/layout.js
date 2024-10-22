@@ -4,6 +4,7 @@ import "./globals.css";
 import Head from "next/head"; // Import Head from next/head
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import WhatsAppChat from '../components/WhatsappButton';
 
 export default function RootLayout({ children }) {
   return (
@@ -21,7 +22,10 @@ export default function RootLayout({ children }) {
         <NavBar />
         <main className="pt-16">{children}</main>
         <Footer />
+     <WhatsAppChat/>
+
       </body>
+
     </html>
   );
 }

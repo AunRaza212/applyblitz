@@ -39,3 +39,21 @@ p {
 /* Add this to your global CSS or a specific CSS module */
 /* Add this to your global CSS or a specific CSS module */
 /* Add this to your global CSS or a specific CSS module */
+.whatsapp_float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: #25D366;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.whatsapp_float img {
+  margin-right: 10px;
+}
