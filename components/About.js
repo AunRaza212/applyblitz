@@ -1,91 +1,55 @@
 // app/about/page.js
 import React from 'react';
-import Image from 'next/image';
-import '../styles/global.css'
+import '../styles/global.css';
+
 export default function AboutPage() {
   return (
-    <div className="bg-[#f9f9f9] min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        {/* Introduction Section */}
-        <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-gray-800">About Us</h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto font-redhat">
-            We are passionate about delivering exceptional services that make a
-            difference. Our team works tirelessly to provide you with the best
-            experience.
-          </p>
-        </section>
+    <div className="bg-white min-h-screen flex flex-col items-center py-16 px-4">
+      
+      {/* About Us Section */}
+      <section className="w-full max-w-3xl mb-16 text-center">
+        <h1 className="text-4xl font-bold bg-blue-500 text-white py-2 px-6 inline-block">ABOUT US</h1>
+      </section>
 
-        {/* Our Story Section */}
-        <section className="flex flex-col md:flex-row items-center mb-16">
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-3xl font-bold mb-4 text-gray-800">Our Story</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Founded in [Year], our mission has always been to drive success
-              and provide value for our clients. From humble beginnings, we have
-              grown into a thriving team dedicated to innovation and
-              professionalism.
-            </p>
-            <p className="text-lg text-gray-700">
-              Our journey has been marked by trust, collaboration, and constant
-              growth. We&apos;re proud of the milestones weve achieved and excited
-              about the future ahead.
-            </p>
-          </div>
-          <div className="md:w-1/2 p-4">
-            {/* <Image
-              src="/images/team.jpg"
-              alt="A photo of our team"
-              className="rounded-lg shadow-lg w-full object-cover"
-            /> */}
-          </div>
-        </section>
+      {/* Who Are We Section */}
+      <section className="w-full max-w-3xl mb-10">
+        <h2 className="text-xl font-semibold bg-blue-500 text-white inline-block px-4 py-1 mb-4">
+          WHO ARE WE?
+        </h2>
+        <p className="text-gray-800 leading-relaxed mb-4">
+          Founded in 2020, LAMA is a high-street brand with a focus on combining functional, sustainable design with popular fashion for a diverse audience spanning different ages and lifestyles.
+        </p>
+        <p className="text-gray-800 leading-relaxed">
+          The culture at LAMA is about simplicity, kindness, growth, and inclusivity. The customer is at the heart of the LAMA business model. We are committed to providing a comprehensive shopping experience that evolves with what our customers want more and better of.
+        </p>
+      </section>
 
-        {/* Core Values Section */}
-        <section className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">Our Core Values</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Core Value Cards */}
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Integrity</h3>
-              <p className="text-gray-700">
-                We believe in being honest and transparent with our clients,
-                always delivering what we promise.
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Innovation</h3>
-              <p className="text-gray-700">
-                Our team continuously explores new ways to improve and innovate
-                within our industry.
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Excellence</h3>
-              <p className="text-gray-700">
-                We strive for excellence in everything we do, aiming to exceed
-                expectations at every step.
-              </p>
-            </div>
-          </div>
-        </section>
+      {/* Vision Section */}
+      <section className="w-full max-w-3xl mb-10">
+        <h2 className="text-xl font-semibold bg-blue-500 text-white inline-block px-4 py-1 mb-4">
+          VISION
+        </h2>
+        <p className="text-gray-800 italic">
+          We create simple lifestyle choices that let you <strong>tell your own stories.</strong>
+        </p>
+      </section>
 
-        {/* Get in Touch Section */}
-        <section className="text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">Get in Touch</h2>
-          <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-            We’d love to hear from you. Feel free to reach out with any
-            questions, or simply to learn more about what we offer.
-          </p>
-          <a
-            href="/contact"
-            target="_blank" rel="noreferrer"
-            className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700"
-          >
-            Contact Us
-          </a>
-        </section>
-      </div>
+      {/* Core Values Section */}
+      <section className="w-full max-w-3xl">
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">CORE VALUES</h2>
+        <p className="text-gray-800 mb-4">
+          LAMA is committed to expanding rapidly nationwide and evolving every season through:
+        </p>
+        <ul className="list-disc list-inside space-y-2 text-gray-800">
+          <li>Inclusivity</li>
+          <li>Collaboration</li>
+          <li>Ownership</li>
+          <li>Excellence</li>
+          <li>Simplicity</li>
+          <li>Integrity</li>
+        </ul>
+      </section>
+      
     </div>
   );
 }

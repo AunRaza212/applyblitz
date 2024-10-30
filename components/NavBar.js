@@ -51,11 +51,11 @@ const NavBar = () => {
             About
           </a>
           <a
-            href='/contact'
+            href='/checkout'
             rel="noreferrer"
             className="text-white hover:text-yellow-400 transition duration-200"
           >
-            Contact
+            Checkout
           </a>
           {/* <a href="/checkout" target="_blank" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
             Checkout

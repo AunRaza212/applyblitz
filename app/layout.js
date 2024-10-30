@@ -11,6 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         {/* Include Google Fonts for Montserrat */}
+        <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
