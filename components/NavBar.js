@@ -50,13 +50,13 @@ const NavBar = () => {
           >
             About
           </a>
-          <a
+          {/* <a
             href='/checkout'
             rel="noreferrer"
             className="text-white hover:text-yellow-400 transition duration-200"
           >
             Checkout
-          </a>
+          </a> */}
           {/* <a href="/checkout" target="_blank" rel="noreferrer"  className="text-white hover:text-yellow-400 transition duration-200">
             Checkout
           </a> */}
