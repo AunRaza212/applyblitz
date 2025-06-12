@@ -1,9 +1,7 @@
 "use client";
-
 import React from "react";
 
-const 
-Button = ({
+const Button = ({
   type,
   text,
   bgColor,
@@ -11,23 +9,28 @@ Button = ({
   hoverColor,
   textHover,
   targetSectionId,
-  otherclasses
+  otherclasses,
+  onClick,
 }) => {
-  console.log(type, "type");
-
-  // Function to scroll to the target section
   const handleClick = () => {
-    const section = document.getElementById(targetSectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (targetSectionId) {
+      // Scroll to the target section if provided
+      const section = document.getElementById(targetSectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    if (onClick) {
+      // Call the onClick handler if provided
+      onClick();
     }
   };
 
   return (
     <button
-    onClick={handleClick} // Handle the click event to scroll
+      onClick={handleClick}
       type={type}
-      className={`py-3 px-6 rounded-lg ${otherclasses} bg-${bgColor} transition-all duration-300 ease-in ${hoverColor ? hoverColor :''} ${textHover ? textHover : ''} text-${textColor} font-semibold`}
+      className={`py-3 px-6 rounded-lg ${otherclasses} bg-${bgColor} transition-all duration-300 ease-in ${hoverColor} ${textHover} text-${textColor} font-semibold`}
     >
       {text}
     </button>

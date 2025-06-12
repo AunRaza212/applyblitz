@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <NavBar />
         <main className="pt-16">{children}</main>
         <Footer />
-     <WhatsAppChat/>
+        <WhatsAppChat />
 
       </body>
 

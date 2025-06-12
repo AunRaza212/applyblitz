@@ -13,7 +13,7 @@ export default function ContactPage() {
         </section>
 
         {/* Form Section */}
-        <section className="mb-16">
+        <section id='Contact Form' className="mb-16">
           <form netlify name='Gold' className="grid grid-cols-1 gap-6">
             <div>
               <label htmlFor="name" className="block text-lg font-medium text-gray-800">
