@@ -121,8 +121,11 @@ export default function PackageDetail({ params }) {
       <section className="bg-gray-800 py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-yellow-400 mb-6">
-            Ready to Get Started with {packageData.title}?
+            {packageData.title === "Kickstart Your Career"
+              ? `Ready to ${packageData.title}?`
+              : `Ready to have an ${packageData.title}?`}
           </h2>
+
           <p className="text-lg text-gray-300 mb-10">
             Fill out your details below so we can generate your invoice and begin your job application journey.
           </p>
@@ -134,4 +137,3 @@ export default function PackageDetail({ params }) {
     </div>
   );
 }
-  

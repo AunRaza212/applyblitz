@@ -50,7 +50,7 @@ export default function InvoiceForm() {
             <form
                 ref={form}
                 onSubmit={sendEmail}
-                className="w-full max-w-md bg-gray-900 p-8 rounded-lg shadow-lg space-y-6"
+                className="w-full max-w-2xl bg-gray-900 p-8 rounded-lg shadow-lg space-y-6"
             >
                 <h2 className="text-2xl font-bold text-yellow-400 text-center mb-4">
                     Invoice Request Form
@@ -80,34 +80,34 @@ export default function InvoiceForm() {
                     className="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 />
 
-               <div className="relative">
-  <select
-    name="country"
-    required
-    defaultValue=""
-    className="w-full bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-md px-3 py-3 pr-10 appearance-none"
-  >
-    <option value="" disabled>Select your country</option>
-    {countries.map((country) => (
-      <option key={country} value={country}>{country}</option>
-    ))}
-  </select>
+                <div className="relative">
+                    <select
+                        name="country"
+                        required
+                        defaultValue=""
+                        className="w-full bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-md px-3 py-3 pr-10 appearance-none"
+                    >
+                        <option value="" disabled>Select your country</option>
+                        {countries.map((country) => (
+                            <option key={country} value={country}>{country}</option>
+                        ))}
+                    </select>
 
-  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-white">
-    <svg
-      className="w-4 h-4"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 011.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z"
-        clipRule="evenodd"
-      />
-    </svg>
-  </div>
-</div>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-white">
+                        <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fillRule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 011.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0l-4.25-4.65a.75.75 0 01.02-1.06z"
+                                clipRule="evenodd"
+                            />
+                        </svg>
+                    </div>
+                </div>
 
 
                 <ReCAPTCHA
