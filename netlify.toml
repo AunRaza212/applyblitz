@@ -1,4 +1,7 @@
 [build]
-  command = "npm run build" # or "yarn build"
-  publish = ".next" # or "out" if using next export
+  command = "npm run build"
+  publish = ".next"
 
+[build.environment]
+  NODE_VERSION = "20.10.0"
+  NODE_ENV = "production"
