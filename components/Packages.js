@@ -16,7 +16,7 @@ const Packages = () => {
       id: "executive-career-transition",
       title: "Executive Career Transition",
       price: "$349.99",
-      applications: "700 applications/month",
+      applications: "1000 applications/month",
       description:
         "The premium package is tailored for experienced professionals seeking to make a significant career shift. Benefit from customized job applications and personalized consultations.",
     },
