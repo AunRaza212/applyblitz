@@ -1,87 +1,68 @@
 // app/about/page.js
+"use client";
+import React from "react";
+import "../../styles/global.css";
+
 export default function AboutPage() {
   return (
-    <div className="bg-[#f9f9f9] min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        {/* Introduction Section */}
-        <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-black">About Us</h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            We are passionate about delivering exceptional services that make a
-            difference. Our team works tirelessly to provide you with the best
-            experience.
-          </p>
-        </section>
+    <div className="bg-gray-900 min-h-screen flex flex-col items-center py-16 px-4">
+      {/* About Us Section */}
+      <section className="w-full max-w-4xl mb-16 text-center">
+        <h1 className="text-5xl font-bold text-yellow-400 py-4 border-b-4 border-yellow-400 inline-block">
+          ABOUT US
+        </h1>
+      </section>
 
-        {/* Our Story Section */}
-        <section className="flex flex-col md:flex-row items-center mb-16">
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-3xl font-bold mb-4 text-black">Our Story</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Founded in [Year], our mission has always been to drive success
-              and provide value for our clients. From humble beginnings, we have
-              grown into a thriving team dedicated to innovation and
-              professionalism.
-            </p>
-            <p className="text-lg text-gray-700">
-              Our journey has been marked by trust, collaboration, and constant
-              growth. We’re proud of the milestones we've achieved and excited
-              about the future ahead.
-            </p>
-          </div>
-          <div className="md:w-1/2 p-4">
-            <img
-              src="/images/team.jpg"
-              alt="A photo of our team"
-              className="rounded-lg shadow-lg w-full object-cover"
-            />
-          </div>
-        </section>
+      {/* Who Are We Section */}
+      <section className="w-full max-w-4xl mb-12">
+        <h2 className="text-2xl font-semibold text-white px-4 py-2 mb-6 bg-yellow-400 inline-block rounded-sm">
+          WHO ARE WE?
+        </h2>
+        <p className="text-gray-300 leading-relaxed mb-6">
+          ApplyBlitz was founded with a mission to simplify the job application process and empower individuals to achieve their career goals. We specialize in reviewing CVs and resumes and applying to jobs on behalf of our clients, ensuring they stand out in competitive job markets.
+        </p>
+        <p className="text-gray-400 leading-relaxed">
+          Our services are designed for fresh graduates starting their professional journeys and experienced professionals seeking a career transition. By understanding our clients' unique strengths and aspirations, we help them navigate the complexities of the job market with confidence.
+        </p>
+      </section>
 
-        {/* Core Values Section */}
-        <section className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-black">Our Core Values</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Core Value Cards */}
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-black">Integrity</h3>
-              <p className="text-gray-700">
-                We believe in being honest and transparent with our clients,
-                always delivering what we promise.
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-black">Innovation</h3>
-              <p className="text-gray-700">
-                Our team continuously explores new ways to improve and innovate
-                within our industry.
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-black">Excellence</h3>
-              <p className="text-gray-700">
-                We strive for excellence in everything we do, aiming to exceed
-                expectations at every step.
-              </p>
-            </div>
-          </div>
-        </section>
+      {/* Vision Section */}
+      <section className="w-full max-w-4xl mb-12">
+        <h2 className="text-2xl font-semibold text-white px-4 py-2 mb-6 bg-yellow-400 inline-block rounded-sm">
+          VISION
+        </h2>
+        <p className="text-gray-300 italic">
+          To bridge the gap between talent and opportunity by providing seamless, personalized job application support that helps individuals thrive in their chosen careers.
+        </p>
+      </section>
 
-        {/* Get in Touch Section */}
-        <section className="text-center">
-          <h2 className="text-3xl font-bold mb-6 text-black">Get in Touch</h2>
-          <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-            We’d love to hear from you. Feel free to reach out with any
-            questions, or simply to learn more about what we offer.
-          </p>
-          <a
-            href="/contact"
-            className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700"
-          >
-            Contact Us
-          </a>
-        </section>
-      </div>
+      {/* Core Values Section */}
+      <section className="w-full max-w-4xl">
+        <h2 className="text-3xl font-bold text-yellow-400 mb-6">CORE VALUES</h2>
+        <p className="text-gray-400 mb-6">
+          At ApplyBlitz, our core values guide everything we do to ensure exceptional service and results:
+        </p>
+        <ul className="list-disc list-inside space-y-2 text-gray-300">
+          <li>
+            <strong>Empathy:</strong> We understand the challenges of job seekers and offer tailored solutions to meet their needs.
+          </li>
+          <li>
+            <strong>Excellence:</strong> We aim to deliver high-quality services that maximize our clients' chances of success.
+          </li>
+          <li>
+            <strong>Integrity:</strong> We operate with honesty and transparency in every step of the process.
+          </li>
+          <li>
+            <strong>Innovation:</strong> We leverage modern tools and industry insights to craft standout applications.
+          </li>
+          <li>
+            <strong>Inclusivity:</strong> We support job seekers from all walks of life, regardless of background or experience level.
+          </li>
+          <li>
+            <strong>Commitment:</strong> Your success is our success. We're with you every step of the way.
+          </li>
+        </ul>
+      </section>
     </div>
   );
 }

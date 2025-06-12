@@ -1,4 +1,5 @@
 // app/contact/page.js
+import React from 'react';
 export default function ContactPage() {
   return (
     <div className="bg-[#f9f9f9] min-h-screen">
@@ -7,13 +8,13 @@ export default function ContactPage() {
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-black">Contact Us</h1>
           <p className="text-xl text-gray-700">
-            Have any questions or feedback? We’d love to hear from you! Fill out the form below or reach us through any of the provided contact details.
+            Have any questions or feedback? We&apos;d love to hear from you! Fill out the form below or reach us through any of the provided contact details.
           </p>
         </section>
 
         {/* Form Section */}
-        <section className="mb-16">
-          <form className="grid grid-cols-1 gap-6">
+        <section id='Contact Form' className="mb-16">
+          <form netlify name='Gold' className="grid grid-cols-1 gap-6">
             <div>
               <label htmlFor="name" className="block text-lg font-medium text-gray-800">
                 Your Name

@@ -1,31 +1,32 @@
 "use client";
-import { useState } from "react";
+import React from 'react';
 import "./globals.css";
 import Head from "next/head"; // Import Head from next/head
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import WhatsAppChat from '../components/WhatsappButton';
 
 export default function RootLayout({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-
   return (
     <html lang="en">
       <Head>
-        {/* Include Google Fonts */}
+        {/* Include Google Fonts for Montserrat */}
+        <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className="font-montserrat">
         <NavBar />
         <main className="pt-16">{children}</main>
         <Footer />
+        <WhatsAppChat />
+
       </body>
+
     </html>
   );
 }
