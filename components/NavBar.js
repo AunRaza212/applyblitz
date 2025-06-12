@@ -90,14 +90,14 @@ const NavBar = () => {
         >
           About
         </a>
-        <a
+        {/* <a
           href="/contact"
           rel="noreferrer"
           className="text-white text-xl mb-4 hover:text-yellow-400"
           onClick={() => setIsOpen(false)}
         >
           Contact
-        </a>
+        </a> */}
         {/* <a href="/checkout" target="_blank" rel="noreferrer" className="text-white text-xl hover:text-yellow-400" onClick={() => setIsOpen(false)}>
           Checkout
         </a> */}

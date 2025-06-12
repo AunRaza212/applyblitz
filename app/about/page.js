@@ -1,7 +1,24 @@
-// app/about/page.js
-"use client";
-import React from "react";
+import React from "react"; // No "use client"
 import "../../styles/global.css";
+
+export const metadata = {
+  title: "About Us | Dream Big Achieve Bigger",
+  description: "Learn about our mission to help professionals land their dream jobs.",
+  keywords: "about job services, mission, career help",
+  robots: "index, follow",
+  openGraph: {
+    title: "About Us | Dream Big Achieve Bigger",
+    description: "Learn about our mission to help professionals land their dream jobs.",
+    type: "website",
+    url: "https://www.applyblitz.com/about",
+    siteName: "ApplyBlitz",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Dream Big Achieve Bigger",
+    description: "Learn about our mission to help professionals land their dream jobs.",
+  },
+};
 
 export default function AboutPage() {
   return (
