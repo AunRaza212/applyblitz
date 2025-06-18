@@ -32,7 +32,7 @@ export default function AboutPage() {
 
       {/* Who Are We Section */}
       <section className="w-full max-w-4xl mb-12">
-        <h2 className="text-2xl font-semibold text-white px-4 py-2 mb-6 bg-yellow-400 inline-block rounded-sm">
+        <h2 className="text-2xl font-semibold text-black px-4 py-2 mb-6 bg-yellow-400 inline-block rounded-sm">
           WHO ARE WE?
         </h2>
         <p className="text-gray-300 leading-relaxed mb-6">
@@ -45,7 +45,7 @@ export default function AboutPage() {
 
       {/* Vision Section */}
       <section className="w-full max-w-4xl mb-12">
-        <h2 className="text-2xl font-semibold text-white px-4 py-2 mb-6 bg-yellow-400 inline-block rounded-sm">
+        <h2 className="text-2xl font-semibold text-black px-4 py-2 mb-6 bg-yellow-400 inline-block rounded-sm">
           VISION
         </h2>
         <p className="text-gray-300 italic">
