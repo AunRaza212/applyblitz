@@ -37,13 +37,6 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      text: "This service transformed my job application process. I landed a fantastic role thanks to their help!",
-      name: "Qazi Zohaib Ali",
-      role: "Full Stack Developer",
-      image: '/images/Zohaib.png',
-      linkedin: 'https://www.linkedin.com/in/qazi-zohaib-ali-799824245/',
-    },
-    {
       text: "Incredibly friendly, professional, and effective team. They helped me land interviews and get hired—highly recommended!",
       name: "Ronald Mosness",
       role: "Data Analyst",
@@ -79,6 +72,16 @@ const Testimonials = () => {
       linkedin: 'https://www.linkedin.com/in/grace-ho-343806141/',
     },
 
+    {
+      text: "This service transformed my job application process. I landed a fantastic role thanks to their help!",
+      name: "Qazi Zohaib Ali",
+      role: "Full Stack Developer",
+      image: '/images/Zohaib.png',
+      linkedin: 'https://www.linkedin.com/in/qazi-zohaib-ali-799824245/',
+    },
+
+
+
   ];
 
   return (
@@ -103,20 +106,20 @@ const Testimonials = () => {
                   rel="noopener noreferrer"
                   className="block hover:scale-105 transition-transform duration-300"
                 >
-                <div className="p-8 bg-gray-700 rounded-lg h-[360px] shadow-lg">
-                  <Image
-                    src={testimonial.image}
-                    alt={'img'}
-                    width={200}
-                    height={200}
-                    className="w-24 h-24 rounded-full mb-4 mx-auto"
-                  />
-                  <p className="text-xl font-medium text-gray-200 mb-4 text-center"> {/* Centering text */}
-                    {testimonial.text}
-                  </p>
-                  <h3 className="text-2xl font-bold text-yellow-500 text-center">{testimonial.name}</h3> {/* Centering text */}
-                  <span className="text-gray-400 text-center block">{testimonial.role}</span> {/* Centering text */}
-                </div>
+                  <div className="p-8 bg-gray-700 rounded-lg h-[360px] shadow-lg">
+                    <Image
+                      src={testimonial.image}
+                      alt={'img'}
+                      width={200}
+                      height={200}
+                      className="w-24 h-24 rounded-full mb-4 mx-auto"
+                    />
+                    <p className="text-xl font-medium text-gray-200 mb-4 text-center"> {/* Centering text */}
+                      {testimonial.text}
+                    </p>
+                    <h3 className="text-2xl font-bold text-yellow-500 text-center">{testimonial.name}</h3> {/* Centering text */}
+                    <span className="text-gray-400 text-center block">{testimonial.role}</span> {/* Centering text */}
+                  </div>
                 </a>
               </div>
             ))}
