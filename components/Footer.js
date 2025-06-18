@@ -19,9 +19,7 @@ const Footer = () => {
           <p>
             <strong>Email:</strong> support@applyblitz.com
           </p>
-          <p>
-            <strong>Phone:</strong> +92 3342785830
-          </p>
+        
         </div>
 
         {/* Navigation Links */}
