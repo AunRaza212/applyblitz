@@ -102,7 +102,7 @@ const Testimonials = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block hover:scale-105 transition-transform duration-300"
-                ></a>
+                >
                 <div className="p-8 bg-gray-700 rounded-lg h-[360px] shadow-lg">
                   <Image
                     src={testimonial.image}
@@ -117,6 +117,7 @@ const Testimonials = () => {
                   <h3 className="text-2xl font-bold text-yellow-500 text-center">{testimonial.name}</h3> {/* Centering text */}
                   <span className="text-gray-400 text-center block">{testimonial.role}</span> {/* Centering text */}
                 </div>
+                </a>
               </div>
             ))}
           </Slider>
