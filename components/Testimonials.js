@@ -2,9 +2,13 @@
 
 import React from 'react';
 import Slider from 'react-slick'; // Ensure react-slick and slick-carousel are installed
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
+
+
+
+
 
 const Testimonials = () => {
   // Slick Slider settings
@@ -34,52 +38,47 @@ const Testimonials = () => {
   const testimonials = [
     {
       text: "This service transformed my job application process. I landed a fantastic role thanks to their help!",
-      name: "John Doe",
-      role: "Senior Product Manager",
-      image: "/images/john_doe.jpg",
+      name: "Qazi Zohaib Ali",
+      role: "Full Stack Developer",
+      image: '/images/Zohaib.png',
+      linkedin: 'https://www.linkedin.com/in/qazi-zohaib-ali-799824245/',
     },
     {
-      text: "Highly professional and reliable. I'd recommend this service to anyone serious about their career.",
-      name: "Jane Smith",
-      role: "Software Engineer",
-      image: "/images/jane_smith.jpg",
+      text: "Incredibly friendly, professional, and effective team. They helped me land interviews and get hired—highly recommended!",
+      name: "Ronald Mosness",
+      role: "Data Analyst",
+      image: '/images/Ron.png',
+      linkedin: 'https://www.linkedin.com/in/ronaldmosness/',
     },
     {
       text: "Amazing support and attention to detail. They really helped me stand out in my applications.",
-      name: "Michael Brown",
-      role: "Marketing Specialist",
-      image: "/images/michael_brown.jpg",
+      name: "Moajiz Rizvi",
+      role: "Embedded Software Engineer",
+      image: "/images/Moajiz.png",
+      linkedin: 'https://www.linkedin.com/in/syedalimoajizrizvi/',
     },
     {
       text: "The guidance I received was invaluable. Their team helped me tailor my applications perfectly.",
-      name: "Alice Green",
-      role: "UX Designer",
-      image: "/images/alice_green.jpg",
+      name: "Ann lu",
+      role: "Data Analust",
+      image: "/images/Anullu.png",
+      linkedin: 'https://www.linkedin.com/in/alice-green/',
     },
     {
       text: "Fantastic experience! I got multiple interviews thanks to their service.",
-      name: "Robert White",
-      role: "Data Analyst",
-      image: "/images/robert_white.jpg",
+      name: "Luisa Wicht",
+      role: "Teaching Associate",
+      image: "/images/luisa.png",
+      linkedin: 'https://www.linkedin.com/in/luisa-wicht-9773b2167/',
     },
     {
       text: "The team was very supportive and provided great insights into the hiring process.",
-      name: "Emily Black",
-      role: "Product Designer",
-      image: "/images/emily_black.jpg",
+      name: "Grace Ho",
+      role: "Business Analyst",
+      image: "/images/grace.png",
+      linkedin: 'https://www.linkedin.com/in/grace-ho-343806141/',
     },
-    {
-      text: "I loved how personalized the service was. They really took the time to understand my needs.",
-      name: "Chris Blue",
-      role: "Sales Manager",
-      image: "/images/chris_blue.jpg",
-    },
-    {
-      text: "Thanks to this service, I landed my dream job. Highly recommend!",
-      name: "Sophia Red",
-      role: "Project Coordinator",
-      image: "/images/sophia_red.jpg",
-    },
+
   ];
 
   return (
@@ -98,13 +97,19 @@ const Testimonials = () => {
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
               <div key={index} className="px-4"> {/* Added padding to create space between slides */}
+                <a
+                  href={testimonial.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:scale-105 transition-transform duration-300"
+                ></a>
                 <div className="p-8 bg-gray-700 rounded-lg h-[360px] shadow-lg">
-                  <Image 
-                    src={'https://picsum.photos/200/300'} 
-                    alt={'img'} 
+                  <Image
+                    src={testimonial.image}
+                    alt={'img'}
                     width={200}
                     height={200}
-                    className="w-24 h-24 rounded-full mb-4 mx-auto" 
+                    className="w-24 h-24 rounded-full mb-4 mx-auto"
                   />
                   <p className="text-xl font-medium text-gray-200 mb-4 text-center"> {/* Centering text */}
                     {testimonial.text}
